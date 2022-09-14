@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Function对象</title>
+  <script !src="">
+    /**
+     * Function:函数([方法)对象
+     * 1.创建,
+     *   1. var fun = new Function(形式参数列表,方法体);
+     *   2. function 方法名(){
+     *         方法体
+     *       }
+     *   3. var Method name = function(){
+     *     method body
+     *   }
+     * 2．方法:
+     *
+     * 3．属性
+     * 4．特点:5．调用:
+     * 方法名称(实际参数列表);
+     */
+
+    //创建方式
+    // var fun1 = new Function("a", "b", "alert(a);");
+    // //调用方法
+    // fun1(3,4);
+
+    //创建方式2：
+    function fun2(a, b){
+      alert(a+b);
+    }
+   // fun2(3,4);
+
+    var fun4 = function (a,b){
+      alert(a + b);
+    }
+    fun4(3,4);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

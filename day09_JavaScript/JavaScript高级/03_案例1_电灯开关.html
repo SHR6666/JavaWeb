@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>电灯开关</title>
+</head>
+<body>
+  <img id="eye" src="img/eye.png">
+<script>
+  /**
+   * 1.获取图片
+   * 2.绑定单机事件
+   * 3.每次点击切换图片
+   */
+  //获取图片对象
+  var eye = document.getElementById("eye");
+
+  var flag = false;
+  //绑定单击事件
+  eye.onclick = function () {
+    if (flag){ //判断如果图片为woman,变成eye
+        eye.src = "img/eye.png";
+        flag = false;
+    }else { //如果几片为eye，则变woman
+      eye.src = "img/woman.jpg";
+      flag = true;
+    }
+  }
+</script>
+</body>
+</html>

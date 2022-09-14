@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>事件绑定</title>
+
+</head>
+<body>
+<img id="eye" src="img/eye.png" alt="眼睛" onclick="fun()">
+<img id="woman" src="img/woman.jpg" onclick="f()">
+  <script !src="">
+    function fun() {
+      alert("我被点了");
+      alert("我又被点了");
+    }
+    //1.获取id对象
+    var woman = document.getElementById("woman");
+    //2.绑定事件
+    function f() {
+      alert("咋老点我");
+    }
+  </script>
+</body>
+</html>

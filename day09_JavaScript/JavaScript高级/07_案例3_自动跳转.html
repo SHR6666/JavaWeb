@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>自动跳转</title>
+  <style>
+    p{
+      text-align: center;
+    }
+    span{
+      color:red;
+    }
+  </style>
+
+</head>
+<body>
+  <p>
+    <span id="time" >5</span>秒后跳转到首页...
+  </p>
+  <script>
+    /*
+        分析：
+          1.显示页面效果  <p>
+          2.倒计时读秒效果实现
+            2.1定义一个方法，获取span标签，修改span标签体内容, 时间--
+            2.2定义一个定时器，一秒执行一次该方法
+          3.0秒之后做一个跳转的操作
+     */
+    //倒计时读秒效果实现
+    var second = 5 ;
+    function showTime() {
+      second--;
+      if (second <= 0){
+        location.href = "https://www.hao123.com";
+      }
+      var time = document.getElementById("time");
+      time.innerHTML = second + "";  //innerHTML是改变文本, URL, 及链接目标
+    }
+    //设置定时器, 一秒执行一次该方法
+    setInterval(showTime, 1000);
+
+
+  </script>
+</body>
+</html>

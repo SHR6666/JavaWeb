@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>location对象</title>
+</head>
+<body>
+<input type="button" id="btn" value="刷新">
+<input type="button" id="goItcast" value="去123">
+<script>
+  //reload方法，定义一个按钮，点击按钮刷新页面
+  //1.获取按钮
+  var btn = document.getElementById("btn");
+  //绑定单机事件
+  btn.onclick = function () {
+    //3.刷新页面
+    location.reload();
+  }
+
+  //获取href
+  var href = location.href;
+  // alert(href);
+  //点击按钮去访问itcast.cn官网
+  //1.获取按钮
+  var goItcast = document.getElementById("goItcast");
+  //绑定单机事件
+  goItcast.onclick = function () {
+    //3.点击按钮去访问itcast.cn官网
+    location.href = "https://www.hao123.com";
+  }
+</script>
+</body>
+</html>
